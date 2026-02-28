@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | MyPortfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #0f0f0f, #1c1c1c);
+      color: #fff;
+    }
+
+    
+  nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: rgba(17,17,17,0.8);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;   
+  background: rgba(85, 83, 83, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 30px rgba(88, 87, 87, 0.3);
+  animation: slideDown 0.8s ease-in-out;
+  }
+nav h1 a {
+  text-decoration: none;
+  color: gold;
+  font-size: 24px;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav h1 a:hover {
+  color: #ffd700;
+  transform: scale(1.05);
+}
+
+    nav h1 {
+      color: gold;
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: gold;
+    }
+
+    
+   .about-hero {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  color: black;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("coffee.jpg") center/cover no-repeat;
+  filter: blur(8px);
+  transform: scale(1.1);
+  z-index: -1;
+}
+
+    .about-hero h2 {
+      font-size: 46px;
+      margin-bottom: 20px;
+    }
+
+    .about-hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.7;
+      color: black;
+    }
+
+    
+    .about-content {
+      padding: 80px 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about-text h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: gold;
+    }
+
+    .about-text p {
+      line-height: 1.8;
+      color: #ddd;
+      margin-bottom: 15px;
+    }
+
+    .about-card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    .about-card h4 {
+      margin-bottom: 15px;
+      color: gold;
+    }
+
+    .about-card ul {
+      list-style: none;
+    }
+
+    .about-card li {
+      margin-bottom: 10px;
+      color: #eee;
+    }
+
+    
+    footer {
+      background: rgba(17,17,17,0.8);
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .about-hero h2 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+  <nav>
+   <h1>
+  <a href="landing_page.html">MyPortfolio</a>
+</h1>
+    <ul>
+      <li><a href="landing_page.html">Home</a></li>
+      <li><a href="services.htm">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  
+  <section class="about-hero">
+    <h2>About Me</h2>
+    <p>
+      My name is Adetomiwa Dominion.
+      I am a Web-Developer,Designer(UI/UX),Datascientist,Specialize in SQL(MySQL,
+      SQL ManagemenntStudios)Create applications,Design fliers,Company Logos
+      and more. 
+      I have worked in this field for 4years and counting.
+    </p>
+  </section>
+
+  
+  <section class="about-content">
+    <div class="about-text">
+      <h3>Who I Am</h3>
+      <p>
+        I specialize in modern web design and fullstack-development , combining
+        creativity with technical precision to create Websites that
+        truly stand out.
+      </p>
+      <p>
+        My approach focuses on clean design, smooth interactions, and strong
+        APIs and no crashing once your website is up and runninng 
+        it remains like that forever.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h4>What I Do</h4>
+      <ul>
+        <li> Web Design & UI/UX</li>
+        <li> Full-Stack Development</li>
+        <li> Responsive Websites</li>
+        <li> Brand Identity</li>
+        <li> Performance Optimization</li>
+        <li> Database Manager(Create and Manage)</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 MyPortfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

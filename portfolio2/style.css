@@ -1,0 +1,58 @@
+body{
+    background-image: url(coffee.jpg);
+
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Nav container */
+nav {
+  background: #111;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Menu list */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Links */
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  padding: 5px 0;
+}
+
+/* Hover underline effect */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: gold;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Active link (optional) */
+nav ul li a.active {
+  color: gold;
+}
